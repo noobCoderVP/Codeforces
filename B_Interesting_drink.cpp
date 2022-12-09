@@ -58,5 +58,10 @@ int main()
     sort(all(arr));
     for0(i, q)
     {
-        }
+        ll test;
+        cin >> test;
+        auto itr = upper_bound(all(arr), test);
+        int dist = distance(arr.begin(), itr);
+        cout << dist << en;
+    }
 }
